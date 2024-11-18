@@ -1,0 +1,129 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  /* Cabeçalho */
+  header {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #000; /* Preto mais claro */
+    border-bottom: 2px solid #fff;
+  }
+  
+  header img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 200px;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Botões */
+  button {
+    background-color: #fff; /* Branco */
+    color: #000; /* Preto */
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #ffb703; /* Um toque de dourado */
+    color: #000;
+  }
+  
+  /* Inputs */
+  input, select {
+    background-color: #1f1f1f; /* Fundo preto escuro */
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  input::placeholder {
+    color: #999;
+  }
+  
+  input:focus {
+    border-color: #ffb703; /* Dourado */
+    outline: none;
+  }
+  
+  /* Agendamentos */
+  .schedule-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .schedule-item {
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .schedule-item:hover {
+    transform: scale(1.05);
+    border-color: #ffb703; /* Dourado */
+  }
+  
+  /* Rodapé */
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #121212;
+    border-top: 2px solid #fff;
+  }
+  
+  footer p {
+    font-size: 14px;
+    margin: 0;
+    color: #777;
+  }
+  
+  footer a {
+    color: #ffb703;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  

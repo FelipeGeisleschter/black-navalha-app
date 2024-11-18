@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Black Navalha Barber Shop</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Referência ao arquivo CSS -->
+</head>
+<body>
+
+  <!-- Cabeçalho com logo e título -->
+  <header>
+    <img src="./assets/logo.png" alt="Logo da Barbearia Black Navalha">
+    <h1>Black Navalha Barbearia</h1>
+  </header>
+
+  <!-- Área de Login -->
+  <section id="login-section" class="login-container">
+    <h2>Login</h2>
+    <form id="login-form">
+      <input type="email" placeholder="Digite seu e-mail" required>
+      <input type="password" placeholder="Digite sua senha" required>
+      <button type="submit">Entrar</button>
+    </form>
+  </section>
+
+  <!-- Área de Agendamento -->
+  <section id="schedule-section" class="hidden">
+    <h2>Agendamentos</h2>
+    <form id="schedule-form">
+      <input type="date" id="date" required>
+      <select id="time" required>
+        <option value="" disabled selected>Escolha o horário</option>
+        <option value="09:00">09:00</option>
+        <option value="10:00">10:00</option>
+        <option value="11:00">11:00</option>
+        <option value="12:00">12:00</option>
+        <option value="13:00">13:00</option>
+        <option value="14:00">14:00</option>
+        <option value="15:00">15:00</option>
+        <option value="16:00">16:00</option>
+        <option value="17:00">17:00</option>
+        <option value="18:00">18:00</option>
+        <option value="19:00">19:00</option>
+      </select>
+      <select id="barber" required>
+        <option value="" disabled selected>Escolha o barbeiro</option>
+        <option value="Barbeiro 1">Bruno</option>
+        <option value="Barbeiro 2">João</option>
+      </select>
+      <button type="submit">Marcar Horário</button>
+    </form>
+
+    <!-- Lista de agendamentos -->
+    <div class="schedule-container">
+      <h3>Horários Agendados</h3>
+      <div class="schedule-item">
+        <p>Data: 21/11/2024</p>
+        <p>Hora: 10:00</p>
+        <p>Barbeiro: Bruno</p>
+      </div>
+      <div class="schedule-item">
+        <p>Data: 21/11/2024</p>
+        <p>Hora: 11:00</p>
+        <p>Barbeiro: João</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>© 2024 Black Navalha Barber Shop. Todos os direitos reservados.</p>
+    <p>
+      Desenvolvido por <a href="#">Felipe</a>
+    </p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Simulação de funcionalidade para alternar entre as seções
+    const loginForm = document.getElementById('login-form');
+    const loginSection = document.getElementById('login-section');
+    const scheduleSection = document.getElementById('schedule-section');
+
+    loginForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      // Simulação de autenticação
+      loginSection.classList.add('hidden');
+      scheduleSection.classList.remove('hidden');
+    });
+  </script>
+</body>
+</html>
